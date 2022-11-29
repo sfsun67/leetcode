@@ -1,0 +1,20 @@
+def isPalindrome(x) :
+    y = str(x)
+    n = len (y)
+    j = 0 
+    for i in range(n):
+        if y[i] == y[-i-1] :   #索引值以 0 为开始值，-1 为从末尾的开始位置。   
+            j = j+1
+        if j == n :
+            return True
+    return False
+
+x = 121
+print(f"是回文数字：{isPalindrome(x)}")
+    
+
+
+
+        
+
+
